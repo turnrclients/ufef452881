@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Experienced advocates providing legal consultation, representation, and litigation services for individuals and businesses." name="description"/>
+<meta content="advocate, lawyer, legal services, litigation, legal advice" name="keywords"/>
+<base href=""/>
+<title>About_Us</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;family=Open+Sans:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+<link href="assets/css/style.css" rel="stylesheet"/>
+<link href="assets/css/middle_sections.css" rel="stylesheet"/>
+<link href="assets/css/anim-effects.css" rel="stylesheet"/>
+<link href="assets/css/components/header-48.css" rel="stylesheet"/>
+<link href="assets/css/components/footer-7.css" rel="stylesheet"/>
+<link href="assets/css/bootstrap.css" rel="stylesheet"/>
+<link href="assets/css/plugins.css" rel="stylesheet"/>
+<link href="assets/css/custom-Imports.css" rel="stylesheet"/>
+<link href="assets/css/custom/editmode.css" rel="stylesheet"/>
+<link href="assets/css/resonsive.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet"/>
+<style>
+            :root {
+                --site-font: Quicksand;
+            }
+            body, #wrapper, #wrapper * {
+                font-family: var(--site-font) !important;
+            }
+        </style>
+</head>
+<body class="theme-1">
+<div id="wrapper">
+<div data-src="header.html" id="header"></div>
+<div id="mainPageContent">
+<section class="section-wrapper home-65">
+<div class="container-fluid">
+<div class="row">
+<!-- Left Side Text -->
+<div class="col-sm-6">
+<div class="home-65-content">
+<p class="home-65-subtitle">&gt; BRANDS</p>
+<h2 class="home-65-title">
+                        Trusted by <br/>
+                        Industry <span>Leaders.</span>
+</h2>
+</div>
+</div>
+<!-- Right Side Logos -->
+<div class="col-sm-6">
+<div class="home-65-logos-wrapper">
+<!-- Column 1 -->
+<div class="home-65-logos home-65-col1">
+<img alt="Apple" src="assets/images/home-65-1.svg"/>
+<img alt="Microsoft" src="assets/images/home-65-2.svg"/>
+<img alt="Netflix" src="assets/images/home-65-3.svg"/>
+<img alt="Google" src="assets/images/home-65-4.svg"/>
+<img alt="Apple" src="assets/images/home-65-1.svg"/>
+<img alt="Microsoft" src="assets/images/home-65-2.svg"/>
+<img alt="Netflix" src="assets/images/home-65-3.svg"/>
+<img alt="Google" src="assets/images/home-65-4.svg"/>
+</div>
+<!-- Column 2 -->
+<div class="home-65-logos home-65-col2">
+<img alt="Twitter" src="assets/images/home-65-5.png"/>
+<img alt="Instagram" src="assets/images/home-65-6.png"/>
+<img alt="Facebook" src="assets/images/home-65-7.png"/>
+<img alt="YouTube" src="assets/images/home-65-8.png"/>
+<img alt="Twitter" src="assets/images/home-65-5.png"/>
+<img alt="Instagram" src="assets/images/home-65-6.png"/>
+<img alt="Facebook" src="assets/images/home-65-7.png"/>
+<img alt="YouTube" src="assets/images/home-65-8.png"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div data-src="footer.html" id="footer"></div>
+</div>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/middle-section.js"></script>
+<script src="assets/js/init.js"></script>
+<script src="assets/js/plugins.js"></script>
+<script src="assets/js/jquery.main.js"></script>
+<script src="assets/js/gsap.min.js"></script>
+<script src="assets/js/ScrollTrigger.min.js"></script>
+<script src="assets/js/Observer.min.js"></script>
+<script src="assets/js/gsap.effects.js"></script>
+<script src="assets/js/common_js/send_email.js"></script>
+<script src="assets/js/common_js/html_image_editor.js"></script>
+<script src="assets/js/common_js/windows_postmessage.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+                var fileName = document.title || "index";
+
+                $(document).ready(function () {
+                /* Start code to load js and css files properly on local server or production server: NOte: this is the workwround, need to fix this */
+                // loadHeaderFooter("header", "client-assets/ufef452881/ufef452881/header.html");
+                // loadHeaderFooter("footer", "client-assets/ufef452881/ufef452881/footer.html");
+                /*  End code */
+
+                /*  Start code to load js and css files properly on Githubpages  */
+                loadHeaderFooter("header", "header.html");
+                loadHeaderFooter("footer", "footer.html");
+                /* End code */
+
+                });
+
+                function loadHeaderFooter(id, file) {
+                    $("#" + id).load(file, function (response, status, xhr) {
+                        if (status === "error") {
+                            console.error("Error loading " + file + ":", xhr.status, xhr.statusText);
+                            return;
+                        }
+
+                        $("#" + id).find("a").addClass("edit-site");
+                            if (id === "header") {
+                                const header = $("#" + id);
+                                header.find(".main-header-section").hide();
+                                header.find(".header-breadcrumb-section").hide();
+                                const currentPage = (document.title || "").trim().toLowerCase();
+                                if (currentPage === "index" || currentPage === "home") {
+                                    header.find(".main-header-section").css("display", "block");
+                                } else {
+                                    header.find(".header-breadcrumb-section").css("display", "block");
+                                    const displayName = toDisplayName(currentPage);
+                                    header.find(".header-breadcrumb-section .Page_name")
+                                        .text(displayName.charAt(0).toUpperCase() + displayName.slice(1));
+                                }
+                            }
+                    });
+                }
+            </script>
+<script src="assets/js/common_js/image_uploader.js"></script>
+</body>
+</html>
